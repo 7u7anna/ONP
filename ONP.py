@@ -2,7 +2,7 @@
 
 s = str(input())
 T = []
-def algorytmONP(T, s, a):
+def algorytmONP(T, s):
     n = len(s)
     for i in range(n):
         if s[i].isdigit():
@@ -35,7 +35,6 @@ def algorytmONP(T, s, a):
                 count3 = int(T[-2]) / int(T[-1])
                 T.remove(x)
                 T.remove(y)
-                T.append(count3)        
-a = " ".join(T)     
-algorytmONP(T, s, a)
-print(a)
+                T.append(count3)             
+algorytmONP(T, s)
+print(T)
